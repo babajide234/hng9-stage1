@@ -1,0 +1,30 @@
+
+.container{
+  padding: 65px 144px;
+  display: flex;
+  flex-direction: column;
+}
+.profile__section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile__name{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+.img_container{
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;  
+}
