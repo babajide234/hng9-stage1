@@ -4,11 +4,29 @@
   display: flex;
   flex-direction: column;
 }
+.share-btn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 208px;
+  top: 25px;
+  background: #FFFFFF;
+  border: 1px dashed #D0D5DD;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-btn:hover{
+  cursor: pointer;
+}
 .profile__section{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 56px;
 }
 .profile__name{
   font-family: 'Inter';
@@ -57,4 +75,36 @@
 
 .profile__upload img{
   margin-bottom: 15px;
+}
+
+.link__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 32px;
+  width: 100%;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 10px;
+
+  /*  */
+  
+  color: #101828;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.link:hover{
+  background: #D0D5DD;
+  cursor: pointer;
 }

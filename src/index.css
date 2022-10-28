@@ -5,5 +5,9 @@
 }
 
 body{
-  background: #F4F5F7;
+  background: #FFFFFF;
+}
+
+.hidden{
+  display: none;
 }
