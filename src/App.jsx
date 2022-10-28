@@ -1,8 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Icon from './assets/icon.svg'
-import Share from './assets/share.svg'
+import Icon from './assets/icon.svg';
+import Share from './assets/share.svg';
+import Slack from './assets/slack.svg';
+import Github from './assets/Social icon.svg';
+import Zuri from './assets/ZuriLogo.svg';
+import Di from './assets/ll.svg';
 function App() {
+  
   const links = [
     {
       id:'btn__twitter',
@@ -35,11 +40,14 @@ function App() {
       name:'Design Books',
     }
   ]
+
+
   return (
     <>
-      <div className="container">
+      <main className="container">
           <div className="share-btn">
             <img src={Share} alt="" />
+            <div className="share-btn-popup">Share Link</div>
           </div>
           <section className="profile__section">
                 <div className="img_container" id="profile__img">
@@ -57,7 +65,21 @@ function App() {
                 ))
               }
           </section>
-      </div>
+          <section className="link__social">
+              <div className="link__social__buttons">
+                <a href="" className=""><img src={Slack} alt="" className="" /></a>
+                <a href="https://github.com/babajide234" className=""><img src={Github} alt="" className="" /></a>
+              </div>
+          </section>
+      </main>
+      <footer className="footer__section">
+              <div className="footer__container"> 
+                <img src={Zuri} alt="" />
+                <h2 className="">HNG Internship 9 Frontend Task</h2>
+                <img src={Di} alt="" />
+              </div>
+      </footer>
+
     </>
   )
 }
