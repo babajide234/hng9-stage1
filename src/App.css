@@ -109,6 +109,7 @@
   width: 100px;
   height: 100px;
   background: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75));
+  transition: all .3s ease-in-out;
 }
 
 .profile__upload img{
@@ -140,11 +141,13 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .link:hover{
   background: #D0D5DD;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .link__social{
