@@ -13,31 +13,37 @@ function App() {
       id:'btn__twitter',
       url:'https://twitter.com/dev_jyde',
       name:'Twitter Link',
+      title: 'this is where you find books about design and coding'
     },
     {
       id:'btn__zuri',
       url:'https://training.zuri.team/',
       name:'Zuri Team',
+      title: 'this is where you find books about design and coding'
     },
     {
       id:'books',
       url:'http://books.zuri.team/',
       name:'Zuri Books',
+      title: 'this is where you find books about design and coding'
     },
     {
       id:'book__python',
       url:'https://books.zuri.team/python-for-beginners?ref_id=dev_jyde',
       name:'Python Books',
+      title: 'this is where you find books about design and coding'
     },
     {
       id:'pitch',
       url:'https://background.zuri.team/',
       name:'Background Check for Coders',
+      title: 'this is where you find books about design and coding'
     },
     {
       id:'book__design’',
       url:'https://books.zuri.team/design-rules',
       name:'Design Books',
+      title: 'this is where you find books about design and coding'
     }
   ]
 
@@ -60,7 +66,7 @@ function App() {
               {
                 links.map((item)=>(
                   <>
-                      <a href={item.url} id={item.id} className="link">{item.name}</a>
+                      <a href={item.url} id={item.id} className="link" title={item.title}>{item.name}</a>
                   </>
                 ))
               }
