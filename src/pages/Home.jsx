@@ -3,8 +3,6 @@ import Icon from '../assets/icon.svg';
 import Share from '../assets/share.svg';
 import Slack from '../assets/slack.svg';
 import Github from '../assets/Social icon.svg';
-import Zuri from '../assets/ZuriLogo.svg';
-import Di from '../assets/ll.svg';
 
 const Home = () => {
 
@@ -89,13 +87,6 @@ const Home = () => {
               </div>
           </section>
         </main>
-        <footer className="footer__section">
-                <div className="footer__container"> 
-                    <img src={Zuri} alt="" />
-                    <h2 className="">HNG Internship 9 Frontend Task</h2>
-                    <img src={Di} alt="" />
-                </div>
-        </footer>
     </>
   )
 }
