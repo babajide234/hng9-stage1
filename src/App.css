@@ -196,3 +196,114 @@
   text-align: center;
   color: #667085;
 }
+.contact__container{
+  width: 720px;
+  margin:85px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact__header{
+  margin-bottom: 48px;
+}
+.contact__header h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #101828;
+  margin-bottom: 20px;
+}
+.contact__header p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+}
+.contact__even{
+  display: flex;
+  gap: 24px;
+}
+.contact__even >*{
+  flex: 1;
+}
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+.form-label{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+.form-input{
+  padding: 15px 14px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  outline: none;
+}
+.form-input:focus{
+  border: 1px solid #1570EF; 
+}
+
+.form-input::placeholder{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.contact__checkbox{
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.contact__checkbox input{
+  margin-right: 14px;
+}
+
+.contact__checkbox label{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #475467;
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  width: 100%;
+  background: #1570EF;
+  border: 1px solid #1570EF;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button:hover{
+  background: #101828;
+  cursor: pointer;
+}
