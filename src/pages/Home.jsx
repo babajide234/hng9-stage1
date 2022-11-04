@@ -3,7 +3,7 @@ import Icon from '../assets/icon.svg';
 import Share from '../assets/share.svg';
 import Slack from '../assets/slack.svg';
 import Github from '../assets/Social icon.svg';
-
+import { Link } from 'react-router-dom';
 const Home = () => {
 
     const links = [
@@ -54,7 +54,7 @@ const Home = () => {
           url:'/contact',
           name:'Contact Me',
           title: 'this is where you find books about design and coding',
-          type:'anchor'
+          type:'link'
         }
     ]
   return (
@@ -75,7 +75,13 @@ const Home = () => {
               {
                 links.map((item)=>(
                   <>
-                      <a key={item.id} href={item.url}  id={item.id} className="link" title={item.title}>{item.name}</a>
+                    {
+                        item.type == 'link' ? (
+                            <Link key={item.id} to={item.url}  id={item.id} className="link" title={item.title}>{item.name}</Link>
+                        ):(
+                            <a key={item.id} href={item.url}  id={item.id} className="link" title={item.title}>{item.name}</a>
+                        )
+                    }
                   </>
                 ))
               }
