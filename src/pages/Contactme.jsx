@@ -10,7 +10,7 @@ const Contactme = () => {
                 <h1>Contact Me</h1>
                 <p>Hi there, contact me to ask me about anything you have in mind.</p>
             </div>
-            <div className="contact__form">
+            <form method='POST' className="contact__form">
                 <div className="contact__even">
                     <Input placeholder={`Enter your first name`} type={`text`} label={`First name`} name={`first_name`} id={`first_name`}/>
                     <Input placeholder={`Enter your last name`} type={`text`} label={`Last name`} name={`last_name`} id={`last_name`}/>
@@ -23,7 +23,7 @@ const Contactme = () => {
                     <label for={`check`}>You agree to providing your data to {name} who may contact you.</label>
                 </div>
                 <Buttons id={`btn__submit`} text={`Send message`} type={`submit`}/>
-            </div>
+            </form>
         </section>
     </main>
   )
