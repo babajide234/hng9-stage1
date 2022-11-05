@@ -3,6 +3,11 @@ import Buttons from '../components/Button'
 import Input from '../components/Input'
 
 const Contactme = () => {
+    const [check, setCheck] = React.useState();
+
+    const handleCheck =()=>{
+        console.log(check)
+    }
   return (
     <main className="container">
         <section className="contact__container">
@@ -19,10 +24,10 @@ const Contactme = () => {
                 <Input placeholder={`Send me a message and I'll reply you as soon as possible...`} name={`message`} id={`message`} type={`textarea`} label={`Message`}/>
 
                 <div className="contact__checkbox">
-                    <input type={`checkbox`} name={ `checkbox`} id={`check`}/>
+                    <input type={`checkbox`} value={check} onChange={handleCheck} name={ `checkbox`} id={`check`}/>
                     <label for={`check`}>You agree to providing your data to {name} who may contact you.</label>
                 </div>
-                <Buttons id={`btn__submit`} text={`Send message`} type={`submit`}/>
+                <Buttons id={`btn__submit`} status={``} text={`Send message`} type={`submit`}/>
             </form>
         </section>
     </main>
